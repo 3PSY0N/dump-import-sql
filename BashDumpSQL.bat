@@ -10,7 +10,7 @@ echo ----------
 
 for %%t in %TABLE_LIST% do (
 	echo Dump table: %%t
-	mysqldump -u root %%t > %DEST_DIR%%%t_%TODAY_DATE%.sql
+	mysqldump -u root -p %%t > %DEST_DIR%%%t_%TODAY_DATE%.sql
 	echo.
 )
 
