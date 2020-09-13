@@ -14,4 +14,8 @@ for %%t in %TABLE_LIST% do (
 	echo.
 )
 
+echo ----------
+echo Dump completed
+echo ----------
+
 pause;
