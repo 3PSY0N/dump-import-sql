@@ -8,9 +8,11 @@ echo ----------
 echo Import SQL DB
 echo ----------
 
+
+:: Add -p and your password after %DB_USER% if needed.
 for %%t in %FILE_LIST% do (
 	echo Import table: %%t
-	mysql -u %DB_USER% -p %DB_NAME% < %%t.sql
+	mysql -u %DB_USER% %DB_NAME% < %%t.sql
 	echo.
 )
 
