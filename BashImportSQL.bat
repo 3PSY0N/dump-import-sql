@@ -1,16 +1,16 @@
 @echo off
 
-set TABLE_LIST=(table1 table2 table3 table4 table5)
-set TABLE_NAME=tablename
+set FILE_LIST=(file1 file2 file3 file4)
+set DB_NAME=database_name
 set DB_USER=root
 
 echo ----------
 echo Import SQL DB
 echo ----------
 
-for %%t in %TABLE_LIST% do (
+for %%t in %FILE_LIST% do (
 	echo Import table: %%t
-	mysql -u %DB_USER% -p %TABLE_NAME% < %%t.sql
+	mysql -u %DB_USER% -p %DB_NAME% < %%t.sql
 	echo.
 )
 
