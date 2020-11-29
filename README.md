@@ -14,6 +14,7 @@
 1. Edit **REMOVE_LIST** if you want to remove databases from dump operation.
 2. Edit **DEST_DIR** with the desired output path.
 3. Edit **DB_NAME** by your db name.
+4. Add *-p* and your *password* after **%DB_USER%** if needed.
 
 
 Launch
