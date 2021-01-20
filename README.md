@@ -2,6 +2,8 @@
 
 **How to use ?**
 
+For Windows
+
 - **BashImportSQL.bat**
 
 1. Edit **FILE_LIST** by your files name.
@@ -17,4 +19,4 @@
 4. Add *-p* and your *password* after **%DB_USER%** if needed.
 
 
-Launch
+Open CMD and launch the file.
